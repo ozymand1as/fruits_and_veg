@@ -1,12 +1,22 @@
 {
   "expo": {
-    "name": "veg",
-    "slug": "veg",
+    "name": "Фрукты и Овощи",
+    "slug": "fruits_and_veg",
     "platforms": [
       "ios",
       "android",
       "web"
     ],
+    "android": {
+      "package": "com.ozy.fruits_and_veg",
+      "versionCode": 3,
+      "permissions": []
+    },
+    "ios": {
+      "bundleIdentifier": "ru.shop.fruits-and-veg",
+      "buildNumber": "0.0.4",
+      "supportsTablet": true
+    },
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -16,13 +26,12 @@
       "backgroundColor": "#ffffff"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "enabled": true,
+      "checkAutomatically": "ON_LOAD",
+      "fallbackToCacheTimeout": 2000
     },
     "assetBundlePatterns": [
       "**/*"
     ],
-    "ios": {
-      "supportsTablet": true
-    }
   }
 }
